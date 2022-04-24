@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,400;1,600&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    padding: 0 30px 0 30px;
+    position: relative;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #065aa3;
+}
+
+main#exp-contents {
+    margin-left: 36%;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    main#exp-contents {
+        margin-left: 0%;
+        margin-top: 0;
+    }
+
+    .nav-footer {
+        position: absolute;
+        left: -50px;
+        bottom: 0;
+        display: block;
+        min-width: 100%;
+        font-size: 12px;
+    }
+
+    div.site-header {
+        position: relative !important;
+        visibility: visible;
+        margin-top: 0px;
+        margin-bottom: -10px;
+    }
+}
+
+
+/* Classes */
+.sidebar {
+    margin-top: 100px;
+    position: fixed;
+}
+
+.photo-gallery {
+    filter: grayscale(1);
+    -webkit-transition: filter .2s ease-in-out;
+    -o-transition: filter .2s ease-in-out;
+    transition: filter .2s ease-in-out;
+}
+
+.photo-gallery > img {
+    max-width: 100%;
+    width: 200px;
+}
+
+.photo-gallery:hover {
+    filter: grayscale(0);
+}
+
+.nav-footer {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 30%;
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+nav.sidebar {
+    margin-left: 5%;
+}
+
+p.side-about {
+    font-size: 12px;
+}
+
+.site-author {
+    font-size: 24px;
+    font-family: 'Noto-serif', serif;
+    font-weight: 400;
+    margin-top: 30px;
+    display: block;
+}
+
+.fa-icon {
+    font-size: 16px;
+    color: #333333;
+    display: inline-block;
+    margin: 8px 8px -8px 8px;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+    background-color: #ffffff;
+    border: none;
+}
+
+.navbar-fixed-top {
+    position: relative !important;
+}
+
+.copyright {
+    display: block;
+    padding-bottom: 12px;
+}
+
+.color-underline {
+    text-decoration: underline #337ab7;
+}
+
+.time-dash::before {
+    content: '–';
+    font-weight: 300;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.timeline {
+    margin-left: -40px;
+    list-style: none;
+}
+
+
+.vertical-line::before {
+    content: "|";
+    font-weight: 300;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ul.timeline::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 5px;
+    z-index: 400;
+    background-color: #d1d3e0;
+}
+
+.timeline>li::before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #337ab7;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    z-index: 400;
+    background-color: #ffffff;
+}
+
+/* Ids */
+#exp-contents {
+    margin: 10px;
+}
+
+#portfolio {
+    margin-bottom: 80px;
+}
